@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイマー</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <audio src="./alarm.mp3" id="alarm-sound"></audio>
+
+    <main>
+      <div id="timer-area">
+        <h2 id="timer">00:00:00</h2>
+      </div>
+
+      <div id="settings-area">
+        <div id="hours">
+          <p>時</p>
+          <input type="range" name="hours" id="hours-slider" class="slider" min="0" max="23" value="0" />
+        </div>
+
+        <div id="minutes">
+          <p>分</p>
+          <input type="range" name="minutes" id="minutes-slider" class="slider" min="0" max="59" value="0" />
+        </div>
+
+        <div id="seconds">
+          <p>秒</p>
+          <input type="range" name="seconds" id="seconds-slider" class="slider" min="0" max="59" value="0" />
+        </div>
+      </div>
+
+      <div id="button-area">
+        <button id="start-btn">スタート</button>
+        <button id="stop-btn">ストップ</button>
+        <button id="reset-btn">リセット</button>
+      </div>
+    </main>
+  </body>
+</html>
